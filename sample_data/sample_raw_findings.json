@@ -1,0 +1,29 @@
+{
+  "findings": [
+    {
+      "asset_id": "web01",
+      "cve": "CVE-2024-3400",
+      "tool": "nuclei"
+    },
+    {
+      "hostname": "db01",
+      "cve_id": "CVE-2023-44487",
+      "scanner": "nuclei"
+    },
+    {
+      "asset": {
+        "asset_id": "staging-app",
+        "asset_type": "web_app",
+        "fqdn": "staging.example.com",
+        "ip_address": "10.0.2.15",
+        "criticality": "low",
+        "network_zone": "internet",
+        "exposure": "internet-facing",
+        "environment": "staging",
+        "source": "team2-supabase"
+      },
+      "cve": "CVE-2021-44228",
+      "tool": "nuclei"
+    }
+  ]
+}

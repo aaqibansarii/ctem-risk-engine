@@ -1,0 +1,49 @@
+{
+  "items": [
+    {
+      "asset": {
+        "asset_id": "web01",
+        "asset_type": "server",
+        "fqdn": "web01.example.com",
+        "ip_address": "10.0.0.10",
+        "criticality": "high",
+        "network_zone": "internal",
+        "exposure": "internal",
+        "environment": "production",
+        "source": "team2-supabase"
+      },
+      "cve": "CVE-2024-3400",
+      "tool": "nuclei"
+    },
+    {
+      "asset": {
+        "asset_id": "db01",
+        "asset_type": "server",
+        "fqdn": "internal-db01.corp.local",
+        "ip_address": "10.0.1.20",
+        "criticality": "critical",
+        "network_zone": "restricted",
+        "exposure": "restricted",
+        "environment": "production",
+        "source": "team2-supabase"
+      },
+      "cve": "CVE-2023-44487",
+      "tool": "nuclei"
+    },
+    {
+      "asset": {
+        "asset_id": "staging-app",
+        "asset_type": "web_app",
+        "fqdn": "staging.example.com",
+        "ip_address": "10.0.2.15",
+        "criticality": "low",
+        "network_zone": "internet",
+        "exposure": "internet-facing",
+        "environment": "staging",
+        "source": "team2-supabase"
+      },
+      "cve": "CVE-2021-44228",
+      "tool": "nuclei"
+    }
+  ]
+}
