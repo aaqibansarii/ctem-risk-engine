@@ -1,4 +1,4 @@
-# Team 3 --- Risk Scoring Engine (ThreatGraph)
+# CTEM
 
 Vulnerability & Risk Analysis module. Computes a composite risk score
 for each finding (asset + CVE) using **CVSS**, **EPSS**, **CISA KEV**,
